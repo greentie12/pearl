@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Link to CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <!-- Link to JS file for input validation -->
+    <script src="../js/registration.js" defer></script>
+
+    <!-- Document Title -->
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <!-- Section Heading Introducing the Form -->
+    <header>
+      <h1>Register / Create An Account</h1>
+    </header>
+
+    <form class="Reg">
+      <div class="form-div">
+        <h2>Sign Up</h2>
+        <!-- Input field for Username -->
+        <input
+          id="username"
+          type="text"
+          placeholder=" Create username"
+          required
+        />
+        <br />
+        <span id="name-hint" class="hint"></span>
+        <br />
+        <!-- Input field for Email -->
+        <input id="email" type="email" placeholder=" Email address" required />
+        <br />
+        <!-- Input field for Password -->
+        <input
+          id="password"
+          type="text"
+          placeholder=" Create password"
+          required
+        />
+        <br />
+        <!-- Input field for Password Confirmation -->
+        <input
+          id="confirmpassword"
+          type="text"
+          placeholder=" Confirm password"
+          required
+        />
+        <br />
+        <span id="pass-hint" class="hint"></span>
+        <br />
+        <!-- Verification of Age -->
+        <div class="checkboxes">
+          <input type="checkbox" required />
+          <label> I am at least 13 years of age. </label>
+          <br />
+          <!-- Acceptance of TOS & Privacy Rules (via a link) -->
+          <input type="checkbox" required />
+          <label> I accept the Terms of Service and Privacy Rules: </label>
+          <a href="url"> TOS and Privacy Rules </a>
+        </div>
+        <!-- Create link -->
+        <!-- Submit -->
+        <button id="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
